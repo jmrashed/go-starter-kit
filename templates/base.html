@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 text-white">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">My Portfolio</h1>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:text-gray-300">Home</a></li>
+                <li><a href="/about" class="hover:text-gray-300">About Me</a></li>
+                <li><a href="/education" class="hover:text-gray-300">Education</a></li>
+                <li><a href="/skills" class="hover:text-gray-300">Skills</a></li>
+                <li><a href="/experience" class="hover:text-gray-300">Experience</a></li>
+                <li><a href="/projects" class="hover:text-gray-300">Projects</a></li>
+                <li><a href="/portfolio" class="hover:text-gray-300">Portfolio</a></li>
+                <li><a href="/blog" class="hover:text-gray-300">Blog</a></li>
+                <li><a href="/testimonials" class="hover:text-gray-300">Testimonials</a></li>
+                <li><a href="/contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-8">
+        {{block "content" .}}
+        <!-- Default content if no content block provided -->
+        <h2>Default content goes here</h2>
+        {{end}}
+    </main>
+
+    <footer class="bg-blue-600 text-white mt-16">
+        <div class="container mx-auto p-4 text-center">
+            <p>&copy; 2024 Md Rasheduzzaman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

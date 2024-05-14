@@ -19,7 +19,13 @@ go-starter-kit/
 │   ├── server/
 │   │   └── server.go
 ├── templates/
-│   └── index.html
+│   ├── base.html
+│   ├── home.html
+│   ├── about.html
+│   ├── education.html
+│   ├── skills.html
+│   ├── experience.html
+│   ├── contact.html
 ├── assets/
 │   ├── css/
 │   │   └── style.css
@@ -31,6 +37,7 @@ go-starter-kit/
 ├── go.mod
 ├── go.sum
 └── config.yaml
+
 ```
 
 ## Getting Started
@@ -110,7 +117,7 @@ An example HTML file located in the `templates` directory:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
 </head>
 <body>
     <h1>{{ .title }}</h1>

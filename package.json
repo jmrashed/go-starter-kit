@@ -1,0 +1,23 @@
+{
+  "name": "go-starter-kit",
+  "version": "1.0.0",
+  "description": "This is a starter kit for building a Go-based portfolio website. It uses the [Gin](https://github.com/gin-gonic/gin) web framework and [Viper](https://github.com/spf13/viper) for configuration management. The project is structured to promote clean code and scalability.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

@@ -1,0 +1,39 @@
+{{define "content"}}
+        <section class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
+            <p class="text-lg mb-8">Hi, I'm [Your Name], a passionate software developer with expertise in Go,
+                JavaScript, and web development.</p>
+            <a href="/about" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">Learn More About Me</a>
+        </section>
+
+        <section class="mt-16">
+            <h3 class="text-3xl font-bold mb-4">Quick Links</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="/projects" class="block p-4 bg-white shadow-md rounded hover:shadow-lg">
+                    <h4 class="text-2xl font-bold">Projects</h4>
+                    <p class="mt-2">Explore my latest projects and see what I've been working on.</p>
+                </a>
+                <a href="/skills" class="block p-4 bg-white shadow-md rounded hover:shadow-lg">
+                    <h4 class="text-2xl font-bold">Skills</h4>
+                    <p class="mt-2">Discover the skills and technologies I specialize in.</p>
+                </a>
+                <a href="/experience" class="block p-4 bg-white shadow-md rounded hover:shadow-lg">
+                    <h4 class="text-2xl font-bold">Experience</h4>
+                    <p class="mt-2">Learn about my professional journey and past roles.</p>
+                </a>
+                <a href="/education" class="block p-4 bg-white shadow-md rounded hover:shadow-lg">
+                    <h4 class="text-2xl font-bold">Education</h4>
+                    <p class="mt-2">Read about my academic background and qualifications.</p>
+                </a>
+                <a href="/testimonials" class="block p-4 bg-white shadow-md rounded hover:shadow-lg">
+                    <h4 class="text-2xl font-bold">Testimonials</h4>
+                    <p class="mt-2">See what others have to say about working with me.</p>
+                </a>
+                <a href="/contact" class="block p-4 bg-white shadow-md rounded hover:shadow-lg">
+                    <h4 class="text-2xl font-bold">Contact</h4>
+                    <p class="mt-2">Get in touch with me for collaborations or inquiries.</p>
+                </a>
+            </div>
+        </section>
+{{end}}
+{{ template "base.html" . }}
