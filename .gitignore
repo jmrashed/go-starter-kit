@@ -1,0 +1,8 @@
+# Ignore binary files
+*.exe
+*.dll
+*.so
+
+# Ignore build and temporary files
+/bin/
+/vendor/
