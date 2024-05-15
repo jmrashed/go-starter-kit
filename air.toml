@@ -1,0 +1,24 @@
+# Config file for Air
+
+# Root directory to monitor for changes.
+root = "."
+   
+# List of subdirectories to exclude from watching.
+[exclude_dir]
+directories = ["assets", "templates"]
+
+# Command to build your Go application.
+[build]
+cmd = "go build -o ./bin/myapp ./cmd/myapp"
+
+# Command to run your built binary.
+[run]
+cmd = "./bin/myapp"
+
+# List of file extensions to watch for changes.
+[extensions]
+extensions = [".go", ".tpl", ".tmpl", ".html", ".css", ".js"]
+
+# Define logging options.
+[log]
+level = "debug"

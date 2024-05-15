@@ -37,12 +37,12 @@ func NewRouter() *gin.Engine {
 
 // HomeHandler handles requests to the home page.
 func HomeHandler(c *gin.Context) {
+	fmt.Println("Ca")
 	renderTemplate(c, "home.html", "Home")
 }
 
 // AboutHandler handles requests to the about page.
 func AboutHandler(c *gin.Context) {
-	fmt.Println("ABOUT")
 	renderTemplate(c, "about.html", "About Me")
 }
 
@@ -68,7 +68,8 @@ func ContactHandler(c *gin.Context) {
 
 // renderTemplate is a helper function to render HTML templates with page data.
 func renderTemplate(c *gin.Context, templateName string, title string) {
-	c.HTML(http.StatusOK, templateName, gin.H{
-		"title": title,
-	})
+	pageData := PageData{
+		Title: title,
+	}
+	c.HTML(http.StatusOK, templateName, pageData)
 }
